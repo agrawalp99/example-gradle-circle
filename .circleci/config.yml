@@ -8,5 +8,5 @@ jobs:
       - checkout
       - run: ./gradlew assemble
       - run: ./gradlew check
-      - deploy:
-    command: bash <(curl -s https://copilot-test.blackducksoftware.com/ci/circle2/scripts/upload)
+      - deploy
+      command: bash <(curl -s https://copilot-test.blackducksoftware.com/ci/circle2/scripts/upload)
